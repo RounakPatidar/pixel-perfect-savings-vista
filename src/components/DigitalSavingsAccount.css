@@ -1,70 +1,21 @@
-/* Digital Savings Account Styles */
+/* Digital Savings Account Styles - Vertical Layout */
 
 /* Container */
-.DigitalSavingsAccount-container {
+.digital-savings-container {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f8f9fa;
-  min-height: 100vh;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
-/* Header Navigation */
-.DigitalSavingsAccount-header {
-  background-color: #4a9b8e;
-  padding: 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.DigitalSavingsAccount-nav {
-  display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
-  overflow-x: auto;
-  scrollbar-width: none;
-}
-
-.DigitalSavingsAccount-nav::-webkit-scrollbar {
-  display: none;
-}
-
-.DigitalSavingsAccount-nav-item {
-  background: none;
-  border: none;
-  color: white;
-  padding: 16px 20px;
-  font-size: 14px;
-  font-weight: 500;
-  cursor: pointer;
-  white-space: nowrap;
-  transition: background-color 0.3s ease;
-  border-bottom: 3px solid transparent;
-}
-
-.DigitalSavingsAccount-nav-item:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.DigitalSavingsAccount-nav-item.active {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-bottom-color: #f2994a;
-}
-
-/* Main Content */
-.DigitalSavingsAccount-main {
+/* Common Section Styles */
+.container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* Section Content */
-.DigitalSavingsAccount-section-content {
-  padding: 40px 0;
-}
-
-.DigitalSavingsAccount-section-title {
+.section-title {
   font-size: 32px;
   font-weight: 700;
   color: #333;
@@ -72,7 +23,7 @@
   text-align: center;
 }
 
-.DigitalSavingsAccount-section-subtitle {
+.section-subtitle {
   font-size: 16px;
   color: #666;
   margin-bottom: 30px;
@@ -83,20 +34,22 @@
 }
 
 /* Hero Section */
-.DigitalSavingsAccount-hero {
+.hero-section {
   background-color: white;
-  padding: 40px 0;
-  margin-top: 0;
+  padding: 60px 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
-.DigitalSavingsAccount-hero-content {
+.hero-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: start;
 }
 
-.DigitalSavingsAccount-hero-title {
+.hero-title {
   font-size: 48px;
   font-weight: 700;
   color: #4a9b8e;
@@ -104,19 +57,19 @@
   line-height: 1.2;
 }
 
-.DigitalSavingsAccount-hero-icon {
+.hero-icon {
   display: inline-block;
   margin-left: 10px;
   font-size: 40px;
 }
 
-.DigitalSavingsAccount-hero-features {
+.hero-features {
   list-style: none;
   padding: 0;
   margin-bottom: 40px;
 }
 
-.DigitalSavingsAccount-hero-features li {
+.hero-features li {
   padding: 8px 0;
   color: #333;
   font-size: 16px;
@@ -124,7 +77,7 @@
   padding-left: 20px;
 }
 
-.DigitalSavingsAccount-hero-features li::before {
+.hero-features li::before {
   content: '•';
   color: #4a9b8e;
   font-weight: bold;
@@ -133,7 +86,7 @@
 }
 
 /* Interest Rates Table */
-.DigitalSavingsAccount-rates-table {
+.rates-table {
   background-color: white;
   border-radius: 8px;
   overflow: hidden;
@@ -141,7 +94,7 @@
   margin-bottom: 20px;
 }
 
-.DigitalSavingsAccount-rates-table-large {
+.rates-table-large {
   background-color: white;
   border-radius: 8px;
   overflow: hidden;
@@ -152,7 +105,7 @@
   margin-right: auto;
 }
 
-.DigitalSavingsAccount-table-header {
+.table-header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #4a9b8e;
@@ -160,41 +113,41 @@
   font-weight: 600;
 }
 
-.DigitalSavingsAccount-table-row {
+.table-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
   border-bottom: 1px solid #eee;
 }
 
-.DigitalSavingsAccount-table-row:last-child {
+.table-row:last-child {
   border-bottom: none;
 }
 
-.DigitalSavingsAccount-table-cell {
+.table-cell {
   padding: 16px 20px;
   font-size: 14px;
 }
 
-.DigitalSavingsAccount-table-row .DigitalSavingsAccount-table-cell:first-child {
+.table-row .table-cell:first-child {
   background-color: #f8f9fa;
   font-weight: 500;
 }
 
-.DigitalSavingsAccount-table-row .DigitalSavingsAccount-table-cell:last-child {
+.table-row .table-cell:last-child {
   background-color: white;
   font-weight: 600;
   color: #4a9b8e;
 }
 
 /* Form */
-.DigitalSavingsAccount-form-container {
+.form-container {
   background-color: white;
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.DigitalSavingsAccount-form-title {
+.form-title {
   font-size: 24px;
   font-weight: 700;
   color: #333;
@@ -202,11 +155,11 @@
   text-align: center;
 }
 
-.DigitalSavingsAccount-form-group {
+.form-group {
   margin-bottom: 20px;
 }
 
-.DigitalSavingsAccount-form-label {
+.form-label {
   display: block;
   font-size: 14px;
   font-weight: 500;
@@ -214,8 +167,8 @@
   margin-bottom: 8px;
 }
 
-.DigitalSavingsAccount-form-input,
-.DigitalSavingsAccount-form-select {
+.form-input,
+.form-select {
   width: 100%;
   padding: 12px 16px;
   border: 1px solid #ddd;
@@ -225,24 +178,24 @@
   box-sizing: border-box;
 }
 
-.DigitalSavingsAccount-form-input:focus,
-.DigitalSavingsAccount-form-select:focus {
+.form-input:focus,
+.form-select:focus {
   outline: none;
   border-color: #4a9b8e;
   box-shadow: 0 0 0 2px rgba(74, 155, 142, 0.1);
 }
 
-.DigitalSavingsAccount-audio-group {
+.audio-group {
   display: flex;
   gap: 10px;
   align-items: center;
 }
 
-.DigitalSavingsAccount-audio-group .DigitalSavingsAccount-form-select {
+.audio-group .form-select {
   flex: 1;
 }
 
-.DigitalSavingsAccount-audio-button {
+.audio-button {
   background-color: #4a9b8e;
   color: white;
   border: none;
@@ -257,34 +210,34 @@
   justify-content: center;
 }
 
-.DigitalSavingsAccount-audio-button:hover {
+.audio-button:hover {
   background-color: #3d8671;
 }
 
-.DigitalSavingsAccount-checkbox-container {
+.checkbox-container {
   display: flex;
   align-items: flex-start;
   gap: 10px;
   cursor: pointer;
 }
 
-.DigitalSavingsAccount-checkbox {
+.checkbox {
   margin: 0;
   margin-top: 2px;
 }
 
-.DigitalSavingsAccount-checkbox-text {
+.checkbox-text {
   font-size: 14px;
   color: #666;
   line-height: 1.4;
 }
 
-.DigitalSavingsAccount-link {
+.link {
   color: #f2994a;
   text-decoration: underline;
 }
 
-.DigitalSavingsAccount-submit-button {
+.submit-button {
   width: 100%;
   background-color: #f2994a;
   color: white;
@@ -297,19 +250,27 @@
   transition: background-color 0.3s ease;
 }
 
-.DigitalSavingsAccount-submit-button:hover {
+.submit-button:hover {
   background-color: #e8873a;
 }
 
-/* Features Grid */
-.DigitalSavingsAccount-features-grid {
+/* Features Section */
+.features-section {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
   margin-bottom: 40px;
 }
 
-.DigitalSavingsAccount-feature-card {
+.feature-card {
   background-color: white;
   padding: 40px 20px;
   border-radius: 12px;
@@ -318,11 +279,11 @@
   transition: transform 0.3s ease;
 }
 
-.DigitalSavingsAccount-feature-card:hover {
+.feature-card:hover {
   transform: translateY(-5px);
 }
 
-.DigitalSavingsAccount-feature-icon {
+.feature-icon {
   font-size: 48px;
   margin-bottom: 20px;
   background-color: #f0f9f7;
@@ -335,7 +296,7 @@
   margin: 0 auto 20px;
 }
 
-.DigitalSavingsAccount-feature-title {
+.feature-title {
   font-size: 18px;
   font-weight: 600;
   color: #333;
@@ -343,22 +304,30 @@
   margin: 0;
 }
 
-/* Benefits Layout */
-.DigitalSavingsAccount-benefits-layout {
+/* Benefits Section */
+.benefits-section {
+  background-color: white;
+  padding: 80px 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.benefits-layout {
   display: grid;
   grid-template-columns: 1fr 400px;
   gap: 60px;
   align-items: start;
 }
 
-.DigitalSavingsAccount-benefit-item {
+.benefit-item {
   display: flex;
   align-items: flex-start;
   gap: 20px;
   margin-bottom: 30px;
 }
 
-.DigitalSavingsAccount-benefit-icon {
+.benefit-icon {
   background-color: #4a9b8e;
   color: white;
   width: 60px;
@@ -371,28 +340,28 @@
   flex-shrink: 0;
 }
 
-.DigitalSavingsAccount-benefit-text {
+.benefit-text {
   font-size: 16px;
   color: #333;
   line-height: 1.6;
   margin: 0;
 }
 
-.DigitalSavingsAccount-requirements-card {
+.requirements-card {
   background-color: #4a9b8e;
   color: white;
   padding: 30px;
   border-radius: 12px;
 }
 
-.DigitalSavingsAccount-requirements-title {
+.requirements-title {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 25px;
   text-align: center;
 }
 
-.DigitalSavingsAccount-requirement-item {
+.requirement-item {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -401,12 +370,12 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.DigitalSavingsAccount-requirement-item:last-child {
+.requirement-item:last-child {
   border-bottom: none;
   margin-bottom: 0;
 }
 
-.DigitalSavingsAccount-requirement-icon {
+.requirement-icon {
   background-color: rgba(255, 255, 255, 0.2);
   width: 40px;
   height: 40px;
@@ -418,30 +387,38 @@
   flex-shrink: 0;
 }
 
-/* How to Apply */
-.DigitalSavingsAccount-apply-layout {
+/* How to Apply Section */
+.apply-section {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.apply-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
 }
 
-.DigitalSavingsAccount-apply-image {
+.apply-image {
   border-radius: 12px;
   overflow: hidden;
 }
 
-.DigitalSavingsAccount-apply-image img {
+.apply-image img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-.DigitalSavingsAccount-steps {
+.steps {
   position: relative;
 }
 
-.DigitalSavingsAccount-step {
+.step {
   display: flex;
   align-items: flex-start;
   gap: 20px;
@@ -449,7 +426,7 @@
   position: relative;
 }
 
-.DigitalSavingsAccount-step:not(:last-child)::after {
+.step:not(:last-child)::after {
   content: '';
   position: absolute;
   left: 20px;
@@ -459,7 +436,7 @@
   background-color: #f2994a;
 }
 
-.DigitalSavingsAccount-step-number {
+.step-number {
   background-color: #4a9b8e;
   color: white;
   width: 40px;
@@ -474,7 +451,7 @@
   z-index: 1;
 }
 
-.DigitalSavingsAccount-step-text {
+.step-text {
   font-size: 16px;
   color: #333;
   line-height: 1.6;
@@ -482,15 +459,23 @@
   padding-top: 8px;
 }
 
-/* Eligibility */
-.DigitalSavingsAccount-eligibility-grid {
+/* Eligibility Section */
+.eligibility-section {
+  background-color: white;
+  padding: 80px 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.eligibility-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 40px;
   margin-bottom: 40px;
 }
 
-.DigitalSavingsAccount-eligibility-item {
+.eligibility-item {
   display: flex;
   align-items: flex-start;
   gap: 20px;
@@ -500,7 +485,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.DigitalSavingsAccount-eligibility-icon {
+.eligibility-icon {
   background-color: #4a9b8e;
   color: white;
   width: 40px;
@@ -513,63 +498,136 @@
   flex-shrink: 0;
 }
 
-.DigitalSavingsAccount-eligibility-item p {
+.eligibility-item p {
   font-size: 16px;
   color: #333;
   line-height: 1.6;
   margin: 0;
 }
 
-/* CTA Center */
-.DigitalSavingsAccount-cta-center {
-  text-align: center;
-  margin-top: 40px;
+/* Interest Rates Section */
+.interest-rates-section {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
-.DigitalSavingsAccount-cta-button {
-  background-color: #f2994a;
-  color: white;
-  border: none;
-  padding: 14px 40px;
-  border-radius: 6px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.DigitalSavingsAccount-cta-button:hover {
-  background-color: #e8873a;
-}
-
-/* Contact Info */
-.DigitalSavingsAccount-contact-info {
+.contact-info {
   text-align: center;
   font-size: 16px;
   color: #666;
   margin: 30px 0;
 }
 
-.DigitalSavingsAccount-important-notes {
+.important-notes {
   margin-top: 40px;
   padding: 20px;
-  background-color: #f8f9fa;
+  background-color: white;
   border-radius: 8px;
 }
 
-.DigitalSavingsAccount-important-notes p {
+.important-notes p {
   margin: 10px 0;
   font-size: 14px;
   color: #333;
 }
 
-/* FAQs */
-.DigitalSavingsAccount-faq-list {
+/* Account Types Section */
+.account-types-section {
+  background-color: white;
+  padding: 80px 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.account-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.account-card {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.account-card:hover {
+  transform: translateY(-5px);
+}
+
+.account-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.account-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.account-content {
+  padding: 25px;
+}
+
+.account-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.account-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.account-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.account-features li {
+  padding: 8px 0;
+  color: #333;
+  font-size: 14px;
+  position: relative;
+  padding-left: 20px;
+  line-height: 1.5;
+}
+
+.account-features li::before {
+  content: '•';
+  color: #4a9b8e;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* FAQs Section */
+.faqs-section {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.faq-list {
   max-width: 800px;
   margin: 0 auto;
 }
 
-.DigitalSavingsAccount-faq-item {
+.faq-item {
   background-color: white;
   margin-bottom: 10px;
   border-radius: 8px;
@@ -577,7 +635,7 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.DigitalSavingsAccount-faq-question {
+.faq-question {
   width: 100%;
   background: none;
   border: none;
@@ -593,21 +651,21 @@
   transition: background-color 0.3s ease;
 }
 
-.DigitalSavingsAccount-faq-question:hover {
+.faq-question:hover {
   background-color: #f8f9fa;
 }
 
-.DigitalSavingsAccount-faq-icon {
+.faq-icon {
   color: #4a9b8e;
   font-size: 18px;
   transition: transform 0.3s ease;
 }
 
-.DigitalSavingsAccount-faq-icon.open {
+.faq-icon.open {
   transform: rotate(180deg);
 }
 
-.DigitalSavingsAccount-faq-answer {
+.faq-answer {
   padding: 0 20px 20px;
   font-size: 14px;
   color: #666;
@@ -626,161 +684,109 @@
   }
 }
 
-/* Account Types */
-.DigitalSavingsAccount-account-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+/* CTA Center */
+.cta-center {
+  text-align: center;
   margin-top: 40px;
 }
 
-.DigitalSavingsAccount-account-card {
-  background-color: white;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+.cta-button {
+  background-color: #f2994a;
+  color: white;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.DigitalSavingsAccount-account-card:hover {
-  transform: translateY(-5px);
-}
-
-.DigitalSavingsAccount-account-image {
-  height: 200px;
-  overflow: hidden;
-}
-
-.DigitalSavingsAccount-account-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.DigitalSavingsAccount-account-content {
-  padding: 25px;
-}
-
-.DigitalSavingsAccount-account-title {
-  font-size: 20px;
-  font-weight: 700;
-  color: #333;
-  margin-bottom: 8px;
-}
-
-.DigitalSavingsAccount-account-subtitle {
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 20px;
-}
-
-.DigitalSavingsAccount-account-features {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.DigitalSavingsAccount-account-features li {
-  padding: 8px 0;
-  color: #333;
-  font-size: 14px;
-  position: relative;
-  padding-left: 20px;
-  line-height: 1.5;
-}
-
-.DigitalSavingsAccount-account-features li::before {
-  content: '•';
-  color: #4a9b8e;
-  font-weight: bold;
-  position: absolute;
-  left: 0;
+.cta-button:hover {
+  background-color: #e8873a;
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-  .DigitalSavingsAccount-main {
+@media (max-width: 1024px) {
+  .container {
     padding: 0 15px;
   }
-
-  .DigitalSavingsAccount-section-title {
-    font-size: 24px;
-    text-align: left;
-  }
-
-  .DigitalSavingsAccount-hero-content {
+  
+  .hero-content,
+  .benefits-layout,
+  .apply-layout {
     grid-template-columns: 1fr;
     gap: 40px;
   }
-
-  .DigitalSavingsAccount-hero-title {
-    font-size: 32px;
+  
+  .hero-title {
+    font-size: 36px;
   }
-
-  .DigitalSavingsAccount-benefits-layout {
-    grid-template-columns: 1fr;
-    gap: 40px;
+  
+  .section-title {
+    font-size: 28px;
   }
-
-  .DigitalSavingsAccount-apply-layout {
-    grid-template-columns: 1fr;
-    gap: 40px;
+  
+  .features-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
   }
-
-  .DigitalSavingsAccount-features-grid {
+  
+  .eligibility-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-
-  .DigitalSavingsAccount-eligibility-grid {
-    grid-template-columns: 1fr;
+  
+  .account-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-  }
-
-  .DigitalSavingsAccount-account-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .DigitalSavingsAccount-form-container {
-    padding: 20px;
-  }
-
-  .DigitalSavingsAccount-nav {
-    padding: 0 15px;
-  }
-
-  .DigitalSavingsAccount-nav-item {
-    padding: 12px 15px;
-    font-size: 13px;
-  }
-
-  .DigitalSavingsAccount-table-cell {
-    padding: 12px 15px;
-    font-size: 13px;
   }
 }
 
-@media (max-width: 480px) {
-  .DigitalSavingsAccount-hero-title {
+@media (max-width: 600px) {
+  .container {
+    padding: 0 10px;
+  }
+  
+  .hero-section,
+  .features-section,
+  .benefits-section,
+  .apply-section,
+  .eligibility-section,
+  .interest-rates-section,
+  .account-types-section,
+  .faqs-section {
+    padding: 40px 0;
+    min-height: auto;
+  }
+  
+  .hero-title {
     font-size: 28px;
   }
-
-  .DigitalSavingsAccount-section-title {
-    font-size: 22px;
+  
+  .section-title {
+    font-size: 24px;
   }
-
-  .DigitalSavingsAccount-form-container {
-    padding: 15px;
+  
+  .form-container {
+    padding: 20px;
   }
-
-  .DigitalSavingsAccount-feature-card,
-  .DigitalSavingsAccount-eligibility-item {
+  
+  .feature-card,
+  .eligibility-item {
     padding: 20px 15px;
   }
-
-  .DigitalSavingsAccount-nav-item {
-    padding: 10px 12px;
-    font-size: 12px;
+  
+  .table-cell {
+    padding: 12px 15px;
+    font-size: 13px;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .account-grid {
+    grid-template-columns: 1fr;
   }
 }
