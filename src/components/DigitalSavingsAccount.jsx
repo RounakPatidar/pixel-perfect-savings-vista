@@ -95,23 +95,23 @@ const DigitalSavingsAccount = () => {
                     <div className="DigitalSavingsAccount-table-cell">3.00%</div>
                   </div>
                   <div className="DigitalSavingsAccount-table-row">
-                    <div className="DigitalSavingsAccount-table-cell">> ₹1 lakh to ₹5 lakhs</div>
+                    <div className="DigitalSavingsAccount-table-cell">&gt; ₹1 lakh to ₹5 lakhs</div>
                     <div className="DigitalSavingsAccount-table-cell">4.00%</div>
                   </div>
                   <div className="DigitalSavingsAccount-table-row">
-                    <div className="DigitalSavingsAccount-table-cell">> ₹5 lakhs to ₹10 lakhs</div>
+                    <div className="DigitalSavingsAccount-table-cell">&gt; ₹5 lakhs to ₹10 lakhs</div>
                     <div className="DigitalSavingsAccount-table-cell">6.00%</div>
                   </div>
                   <div className="DigitalSavingsAccount-table-row">
-                    <div className="DigitalSavingsAccount-table-cell">> ₹10 lakhs to ₹50 lakhs</div>
+                    <div className="DigitalSavingsAccount-table-cell">&gt; ₹10 lakhs to ₹50 lakhs</div>
                     <div className="DigitalSavingsAccount-table-cell">7.00%</div>
                   </div>
                   <div className="DigitalSavingsAccount-table-row">
-                    <div className="DigitalSavingsAccount-table-cell">> ₹50 lakhs to ₹5 crores</div>
+                    <div className="DigitalSavingsAccount-table-cell">&gt; ₹50 lakhs to ₹5 crores</div>
                     <div className="DigitalSavingsAccount-table-cell">7.25%</div>
                   </div>
                   <div className="DigitalSavingsAccount-table-row">
-                    <div className="DigitalSavingsAccount-table-cell">>₹5 crores</div>
+                    <div className="DigitalSavingsAccount-table-cell">&gt;₹5 crores</div>
                     <div className="DigitalSavingsAccount-table-cell">7.50%</div>
                   </div>
                 </div>
@@ -354,23 +354,23 @@ const DigitalSavingsAccount = () => {
                   <div className="DigitalSavingsAccount-table-cell">3.00%</div>
                 </div>
                 <div className="DigitalSavingsAccount-table-row">
-                  <div className="DigitalSavingsAccount-table-cell">> ₹1 lakh to ₹5 lakhs</div>
+                  <div className="DigitalSavingsAccount-table-cell">&gt; ₹1 lakh to ₹5 lakhs</div>
                   <div className="DigitalSavingsAccount-table-cell">4.00%</div>
                 </div>
                 <div className="DigitalSavingsAccount-table-row">
-                  <div className="DigitalSavingsAccount-table-cell">> ₹5 lakhs to ₹10 lakhs</div>
+                  <div className="DigitalSavingsAccount-table-cell">&gt; ₹5 lakhs to ₹10 lakhs</div>
                   <div className="DigitalSavingsAccount-table-cell">6.00%</div>
                 </div>
                 <div className="DigitalSavingsAccount-table-row">
-                  <div className="DigitalSavingsAccount-table-cell">> ₹10 lakhs to ₹50 lakhs</div>
+                  <div className="DigitalSavingsAccount-table-cell">&gt; ₹10 lakhs to ₹50 lakhs</div>
                   <div className="DigitalSavingsAccount-table-cell">7.00%</div>
                 </div>
                 <div className="DigitalSavingsAccount-table-row">
-                  <div className="DigitalSavingsAccount-table-cell">> ₹50 lakhs to ₹5 crores</div>
+                  <div className="DigitalSavingsAccount-table-cell">&gt; ₹50 lakhs to ₹5 crores</div>
                   <div className="DigitalSavingsAccount-table-cell">7.25%</div>
                 </div>
                 <div className="DigitalSavingsAccount-table-row">
-                  <div className="DigitalSavingsAccount-table-cell">> ₹5 crores</div>
+                  <div className="DigitalSavingsAccount-table-cell">&gt; ₹5 crores</div>
                   <div className="DigitalSavingsAccount-table-cell">7.50%</div>
                 </div>
               </div>
